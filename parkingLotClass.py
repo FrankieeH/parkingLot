@@ -10,6 +10,9 @@ class parkingLot:
 		self.total_parking_spots = int(self.square_footage / self.parking_spot_size)
 		self.parking_lot_array = [0] * self.total_parking_spots
 
+		#print array out to make sure it's being created
+		print('\n', self.parking_lot_array, '\n')
+
 
 	def __str__(self):
 		

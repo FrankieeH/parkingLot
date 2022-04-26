@@ -9,7 +9,7 @@ class Car:
 
 	def __str__(self):
 
-		return f"This car's license_plate_num is : {self.license_plate_num}."
+		return f"This car's license plate # is : {self.license_plate_num}."
 
 	def park(self, parking_lot, spot_number):
 
