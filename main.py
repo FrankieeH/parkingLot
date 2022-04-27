@@ -51,17 +51,17 @@ def create_cars(carAmount):
 def time_to_park():
 	for i in range(0,len(carArray)):
 
-	randnum = random.randint(0,len(lot1.total_parking_spots)-1)
-	print("Attempting to park Car in spot #: ", randnum)
+		randnum = random.randint(0,len(lot1.total_parking_spots)-1)
+		print("Attempting to park Car in spot #: ", randnum)
 
-	if total < len(lot1.parking_lot_array):
-		carArray[i].park(lot1,randnum)
-	else:
-		print("Parking Lot has reached full capacity. Unable to park Car with License Plate Number: ", carArray[i].license_plate_num), "Sorry, come again another time!")
+		if total < len(lot1.parking_lot_array):
+			carArray[i].park(lot1,randnum)
+		else:
+			print("Parking Lot has reached full capacity. Unable to park Car with License Plate Number: ", carArray[i].license_plate_num), "Sorry, come again another time!")
 
-	total +=1
-	print("Total parking spots filled: ", total)
-	print("Total parking spots available: ", len(lot1.total_parking_spots))
+		total +=1
+		print("Total parking spots filled: ", total)
+		print("Total parking spots available: ", len(lot1.total_parking_spots))
 
 
 
