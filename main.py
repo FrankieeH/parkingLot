@@ -40,11 +40,11 @@ def create_cars(carAmount):
 		letters_and_digits = string.ascii_letters + string.digits
 		result_str = ''.join((random.choice(letters_and_digits) for i in range(7)))
 
-		print('Car License Plate # for this car is: ',result_str)
+		#print('Car License Plate # for this car is: ',result_str)
 
 	#create a Car for each License Plate created and add them to Car Array
 		carArray.append(carClass.Car(result_str))
-		print('\n',carArray[num].license_plate_num)
+		#print('\n',carArray[num].license_plate_num)
 
 def time_to_park():
 
@@ -58,11 +58,13 @@ def time_to_park():
 		if total < len(lot1.parking_lot_array):
 			carArray[i].park(lot1.parking_lot_array,randnum)
 		else:
-			print("Parking Lot has reached full capacity. Unable to park Car with License Plate Number: ", carArray[i].license_plate_num, "Sorry, come again another time!")
+			print("Parking Lot has reached full capacity. Unable to park Car with License Plate Number: ", carArray[i].license_plate_num, "Sorry, come again another time!\n")
 
 		total +=1
-		print("Parking spots attempted to be filled: ", total)
-		print("Total parking spots available: ", lot1.total_parking_spots)
+
+
+		#print("Parking spots attempted to be  filled: ", total)
+		#print("Total parking spots available: ", lot1.total_parking_spots)
 
 
 
@@ -72,7 +74,7 @@ def time_to_park():
 print("Welcome to Frankie's Parking Lot Services\n")
 
 
-print("First let's create the Parking Lot")
+print("First let's create the Parking Lot\n")
 
 lot_squareft = user_input_lot()
 parkingspot_squareft = user_input_spot()
@@ -84,6 +86,7 @@ parkingspot_squareft = user_input_spot()
 #we created a parking lot object from parkingLot Class
 lot1 = PL.parkingLot(lot_squareft, parkingspot_squareft)
 
+#print out the parking lot to make sure it exists
 print('\n',lot1,'\n')
 
 

@@ -18,7 +18,7 @@ class Car:
 			if parking_lot[spot_number] == 0:
 				#assign Car License Plate Num to spot
 				parking_lot[spot_number] = self.license_plate_num
-				print("Car with License Plate #: ", self.license_plate_num, " parked in spot number: ", spot_number, " succesfully!")
+				print("Car with License Plate #: ", self.license_plate_num, " parked in spot number: ", spot_number, " succesfully!\n")
 				break
 			else:
 				#breaks out of loop 
@@ -34,7 +34,7 @@ class Car:
 			if parking_lot[randnum] == 0:
 				#assign Car License Plate Num to spot
 				parking_lot[randnum] = self.license_plate_num
-				print("We found a spot! Car with License Plate #: ", self.license_plate_num, " was parked in spot number: ", spot_number, " succesfully!")
+				print("We found a spot! Car with License Plate #: ", self.license_plate_num, " was parked in spot number: ", spot_number, " succesfully!\n")
 				canPark = True
 			else:
 				canPark = False
@@ -42,4 +42,4 @@ class Car:
 
 	def __str__(self):
 
-		return f"This car's license plate # is : {self.license_plate_num}."
+		return f"\nThis car's license plate # is : {self.license_plate_num}.\n"
