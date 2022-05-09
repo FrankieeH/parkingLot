@@ -4,7 +4,7 @@
 
 class parkingLot:
 
-	def __init__(self, square_footage, parking_spot_size):
+	def __init__(self, square_footage=2000, parking_spot_size=96):
 		self.square_footage = square_footage
 		self.parking_spot_size = parking_spot_size
 		self.total_parking_spots = int(self.square_footage / self.parking_spot_size)
@@ -17,4 +17,3 @@ class parkingLot:
 	def __str__(self):
 		
 		return f'\nThis parking lot is {self.square_footage} square feet and can fit a total of {self.total_parking_spots} cars!'
-
